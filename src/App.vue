@@ -1,17 +1,25 @@
 <template>
   <div>
+      <app-header/>
+      <app-footer/>
       <p>{{name}}</p>
       <p>{{age}}</p>  
   </div>
 </template>
 
 <script>
+import Header from './Components/Header_footer/Header';
+import Footer from './Components/Header_footer/Footer';
 export default {
   data(){
     return {
       name: "Naz",
       age: 0
     }
+  },
+  components: {
+    'app-header': Header,
+    'app-footer': Footer
   }
 }
 </script>
