@@ -1,6 +1,7 @@
 <template>
   <div>
-      <app-header/>
+      <!-- Globaly Call -->
+      <app-header></app-header>
       <app-footer/>
       <p>{{name}}</p>
       <p>{{age}}</p>  
@@ -8,7 +9,7 @@
 </template>
 
 <script>
-import Header from './Components/Header_footer/Header';
+// import Header from './Components/Header_footer/Header';
 import Footer from './Components/Header_footer/Footer';
 export default {
   data(){
@@ -18,7 +19,7 @@ export default {
     }
   },
   components: {
-    'app-header': Header,
+    // 'app-header': Header,
     'app-footer': Footer
   }
 }
