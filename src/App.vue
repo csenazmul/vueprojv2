@@ -1,6 +1,5 @@
 <template>
   <div>
-      <!-- Globaly Call -->
       <app-header></app-header>
       <app-footer/>
       <p>{{name}}</p>
@@ -9,7 +8,7 @@
 </template>
 
 <script>
-// import Header from './Components/Header_footer/Header';
+import Header from './Components/Header_footer/Header';
 import Footer from './Components/Header_footer/Footer';
 export default {
   data(){
@@ -19,7 +18,7 @@ export default {
     }
   },
   components: {
-    // 'app-header': Header,
+    'app-header': Header,
     'app-footer': Footer
   }
 }
@@ -35,4 +34,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+body{
+  background-color:aliceblue;
+  font-family: 'Encode Sans SC', sans-serif;
+}
+  
 </style>
