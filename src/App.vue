@@ -1,9 +1,8 @@
 <template>
   <div>
-      <app-header></app-header>
+      <app-header :myName="name" />
       <app-footer/>
-      <p>{{name}}</p>
-      <p>{{age}}</p>  
+      
   </div>
 </template>
 
@@ -13,8 +12,7 @@ import Footer from './Components/Header_footer/Footer';
 export default {
   data(){
     return {
-      name: "Naz",
-      age: 0
+      name: "Nazmul"
     }
   },
   components: {
