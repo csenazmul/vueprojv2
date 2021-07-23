@@ -1,8 +1,14 @@
 <template>
   <div>
       <!-- <app-header :myName="name" /> -->
-      <app-header :myStudent="students" />
-      <app-footer/>
+      <!-- <app-header :myStudent="students" /> -->
+      <app-header 
+        :firstName = "fName"
+        :lastName = "lName"
+        :age = "myAge"
+
+      />
+      <app-footer :myStudent="students"/>
       
   </div>
 </template>
@@ -14,7 +20,10 @@ export default {
   data(){
     return {
       name: "Nazmul",
-      students: ["Nazmul", "Taieba", "Rukshana"]
+      students: ["Nazmul", "Taieba", "Rukshana"],
+      fName: "Jon",
+      lName: "Doe",
+      myAge: 21
     }
   },
   components: {

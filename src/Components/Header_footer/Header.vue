@@ -1,25 +1,24 @@
 <template>
     <div>
         New Header
-        <!-- <p>{{myName}}</p> -->
-        <p>{{myStudent}}</p>
-        <ul>
-            <li v-for="stu in myStudent"  :key="stu">
-                {{stu}}
-            </li>
-        </ul>
+       <p>First Name: {{firstName}}</p>
+       <p>Last Name: {{lastName}}</p>
+       <p>Age: {{age}}</p>
+
+       <button @click="updateName"> Click me</button>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        // myName:{
-        //     type: String,
-        //     required : true
-        // },
-        myStudent:{
-            type: Array
+        firstName:String,
+        lastName:String,
+        age: Number
+    },
+    methods: {
+        updateName(){
+            this.firstName = "Raju"
         }
     }
 }
