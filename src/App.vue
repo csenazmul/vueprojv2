@@ -1,6 +1,7 @@
 <template>
   <div>
-      <app-header :myName="name" />
+      <!-- <app-header :myName="name" /> -->
+      <app-header :myStudent="students" />
       <app-footer/>
       
   </div>
@@ -12,7 +13,8 @@ import Footer from './Components/Header_footer/Footer';
 export default {
   data(){
     return {
-      name: "Nazmul"
+      name: "Nazmul",
+      students: ["Nazmul", "Taieba", "Rukshana"]
     }
   },
   components: {
