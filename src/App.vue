@@ -6,6 +6,7 @@
         :firstName = "fName"
         :lastName = "lName"
         :age = "myAge"
+        @updateValue = "fName = $event"
 
       />
       <app-footer :myStudent="students"/>

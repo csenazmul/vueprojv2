@@ -18,7 +18,8 @@ export default {
     },
     methods: {
         updateName(){
-            this.firstName = "Raju"
+            // this.firstName = "Raju"
+            this.$emit('updateValue','Rima')
         }
     }
 }
