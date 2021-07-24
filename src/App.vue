@@ -17,6 +17,7 @@
 <script>
 import Header from './Components/Header_footer/Header';
 import Footer from './Components/Header_footer/Footer';
+
 export default {
   data(){
     return {

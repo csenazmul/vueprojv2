@@ -7,17 +7,15 @@
 
        <button @click="updateName" class="btn btn-primary"> Click me</button>
 
-        <b-button-group>
-        <b-button variant="outline-primary">
-            <b-icon icon="tools"></b-icon> Settings
-        </b-button>
-        <b-button variant="outline-primary">
-            <b-icon icon="person-fill"></b-icon> Account
-        </b-button>
-        <b-button variant="outline-primary">
-            <b-icon icon="inbox-fill"></b-icon> Messages
-        </b-button>
-        </b-button-group>
+        <svg class="bi" width="32" height="32" fill="currentColor">
+        <use xlink:href="bootstrap-icons.svg#heart-fill"/>
+        </svg>
+        <svg class="bi" width="32" height="32" fill="currentColor">
+        <use xlink:href="bootstrap-icons.svg#toggles"/>
+        </svg>
+        <svg class="bi" width="32" height="32" fill="currentColor">
+        <use xlink:href="bootstrap-icons.svg#shop"/>
+        </svg>
 
     </div>
 </template>

@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 
 // Bootstrap import
 import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-icons'
 // import 'bootstrap-icons/font/bootstrap-icons.css'
 // C:\Users\Administrator\Desktop\vuejsbdhouse\vue_proj\vue-proj-v2\node_modules\bootstrap-icons\font
@@ -17,6 +17,21 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 //   Array.from(document.querySelectorAll('.toast'))
 //     .forEach(toastNode => new Toast(toastNode))
+
+import { BootstrapVue, IconsPlugin, BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue'
+
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+
+Vue.component('BIcon', BIcon)
+Vue.component('BIconArrowUp', BIconArrowUp)
+Vue.component('BIconArrowDown', BIconArrowDown)
 
 new Vue({
   render: h => h(App),
