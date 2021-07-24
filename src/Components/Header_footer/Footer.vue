@@ -13,10 +13,13 @@
             <b-icon-arrow-up></b-icon-arrow-up>
             <b-icon-exclamation-triangle-fill></b-icon-exclamation-triangle-fill>
         </div>
+        <hr>
+        
     </div>
 </template>
 
 <script>
+
 export default {
     props: {
         // myName:{

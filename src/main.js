@@ -18,6 +18,16 @@ import 'bootstrap'
 //   Array.from(document.querySelectorAll('.toast'))
 //     .forEach(toastNode => new Toast(toastNode))
 
+//Import fontawesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faUserSecret)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+//End fontawesome
+
 import { BootstrapVue, IconsPlugin, BIcon, BIconArrowUp, BIconArrowDown } from 'bootstrap-vue'
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)

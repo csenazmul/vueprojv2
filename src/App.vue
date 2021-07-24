@@ -10,6 +10,11 @@
 
       />
       <app-footer :myStudent="students"/>
+
+      <div id="app">
+        <font-awesome-icon icon="user-secret" />
+      </div>
+ 
       
   </div>
 </template>
@@ -25,7 +30,8 @@ export default {
       students: ["Nazmul", "Taieba", "Rukshana"],
       fName: "Jon",
       lName: "Doe",
-      myAge: 21
+      myAge: 21,
+      faName: 'App'
     }
   },
   components: {
